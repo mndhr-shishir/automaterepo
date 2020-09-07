@@ -21,9 +21,16 @@ while [[ "${answer,,}" != "y" ]]; do
     exit 0
 done
 
-# stage all modified files
-echo "Staging modified files..."
-git add .
+if [[ `git status --porcelain` ]]; then
+    # stage all modified files
+    echo "Staging modified files..."
+    git add .
+else
+    echo "No changes..."
+    git push -u origin $curBranch
+    echo "Git push successful!"
+    exit 0
+fi
 
 # ask user for the commit message
 read -p "Enter commit message: " commitmsg
