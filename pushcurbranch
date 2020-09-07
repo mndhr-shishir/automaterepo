@@ -27,7 +27,7 @@ if [[ `git status --porcelain` ]]; then
     git add .
 else
     # take into account the bad authentication cases
-    # (where files have already been committed)
+    # (when files have already been committed)
     echo "No changes..."
     git push -u origin $curBranch
     echo "Git push successful!"
