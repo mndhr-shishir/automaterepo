@@ -35,6 +35,6 @@ if git commit -m "$commitmsg"; then
     exit 0
 fi
 
-# report job failed and exit safely
+# report the job failed and exit safely
 echo "Git push failed!"
 exit 1
