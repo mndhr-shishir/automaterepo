@@ -1,0 +1,2 @@
+# write timestamp in 'timestamps.txt' every 5 minutes.
+*/5 * * * * echo "$(date)" >> ~/timestamps.txt
