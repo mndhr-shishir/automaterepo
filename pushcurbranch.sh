@@ -32,7 +32,7 @@ read -p "Enter commit message: " commitmsg
 if git commit -m "$commitmsg"; then
     # push the current branch to github
     git push -u origin $curBranch
-    echo "Git push sucessfull!"
+    echo "Git push successful!"
     exit 0
 fi
 
