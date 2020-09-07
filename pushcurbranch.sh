@@ -8,7 +8,7 @@ curBranch=$(git symbolic-ref --short -q HEAD)
 echo "Current branch: $curBranch"
 
 # ask for confirmation (an escape route)
-answer="no"
+answer="n"
 while [[ "${answer,,}" != "y" ]]; do
     read -p "Continue (y/n)? " answer
 
