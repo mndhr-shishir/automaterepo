@@ -15,8 +15,8 @@ read -p "Enter commit message: " commitmsg
 # don't commit if commit message is empty
 if git commit -m "$commitmsg"; then
     # push the current branch to github
+    git push -u origin $curBranch
     echo "Git push sucessfull!"
 else
     echo "Git push failed!"
-    echo "Empty commit message or files haven't been staged yet."
 fi
