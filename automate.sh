@@ -3,7 +3,7 @@ set -e
 
 # get current branch name
 curBranch=$(git symbolic-ref --short -q HEAD)
-echo "Currentbranch: $curBranch"
+echo "Current branch: $curBranch"
 
 # stage all modified files
 git add .
