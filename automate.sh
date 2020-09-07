@@ -13,7 +13,7 @@ echo "Staging modified files."
 read -p "Enter commit message: " commitmsg
 
 # don't commit if commit message is empty
-if git commit -m $commitmsg > /dev/null 2&>1; then
+if git commit -m $commitmsg; then
     # push the current branch to github
     echo "Git push sucessfull!"
 else
