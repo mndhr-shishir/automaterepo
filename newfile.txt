@@ -2,3 +2,4 @@ hello world
 hello added feature-b
 new feature-b additions
 added new feature-c
+feature-f added
